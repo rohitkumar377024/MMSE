@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+    <TextView
+            android:id="@+id/play_audio_file_title_txtview"
+            style="@style/ToolTextStyle"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Play an Audio File"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/play_audio_file_title_txtview"
+            android:id="@+id/play_audio_file_top_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+        <Button
+                android:id="@+id/play_audio_file_select_audio_clip_btn"
+                style="@style/ToolButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Select Audio Clip" />
+        <Button
+                android:id="@+id/play_audio_file_record_audio_btn"
+                style="@style/ToolButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@color/playAudioFileRecordAudioButton"
+                android:text="Record Audio" />
+    </LinearLayout>
+
+    <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/play_audio_file_top_ll"
+            android:id="@+id/play_audio_file_bottom_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+        <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/play_audio_file_recording_btn"
+                style="@style/ToolButtonStyle"
+                android:background="@color/playAudioFileRecordingButton"
+                android:textOff="Start Recording"
+                android:textOn="Stop Recording" />
+        <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/play_audio_file_playback_btn"
+                style="@style/ToolButtonStyle"
+                android:layout_marginTop="16dp"
+                android:background="@color/playAudioFilePlaybackButton"
+                android:textOff="Start Playing"
+                android:textOn="Stop Playing" />
+        <Button
+                android:id="@+id/play_audio_file_done_btn"
+                style="@style/ToolButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@color/playAudioFileDoneButton"
+                android:text="Done" />
+    </LinearLayout>
+
+    <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/play_audio_file_bottom_ll"
+            android:id="@+id/play_audio_file_make_changes_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+        <Button
+                android:id="@+id/play_audio_file_make_changes_btn"
+                style="@style/ToolButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@color/playAudioFileMakeChangesButton"
+                android:text="Make Changes" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

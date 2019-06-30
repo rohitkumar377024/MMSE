@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="switch_tabs">
+        <item>No Change To Yes/No Text</item>
+        <item>Change Yes/No Text</item>
+    </string-array>
+</resources>

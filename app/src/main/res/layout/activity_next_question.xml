@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".recall.next_question.NextQuestionActivity">
+
+    <TextView
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/helvetica_neue_thin"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="Go To Next Question"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:id="@+id/textView996"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.19999999"/>
+    <TextView
+            android:gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="@font/helvetica_neue_light"
+            android:textColor="@android:color/white"
+            android:text="Screen Only For Display Right \n [Next Questions will be done later]"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView997"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView996"
+            app:layout_constraintHorizontal_bias="0.497" android:layout_marginTop="24dp"/>
+    <Button
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:background="#D32F2F"
+            android:textColor="@android:color/white"
+            android:text="Another Runthrough"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/button998" android:layout_marginStart="32dp" android:layout_marginEnd="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView997" android:layout_marginTop="96dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="@font/helvetica_neue_light"
+            android:textColor="@android:color/white"
+            android:text="This button takes you to the first username screen. This button allows to simulate that you can do multiple runthroughs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textview999" app:layout_constraintTop_toBottomOf="@+id/button998"
+            app:layout_constraintHorizontal_bias="0.498"
+            android:layout_marginStart="32dp" android:layout_marginEnd="32dp" android:layout_marginTop="24dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

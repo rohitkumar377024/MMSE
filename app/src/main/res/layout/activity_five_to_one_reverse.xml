@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".numbers.five_to_one_reverse.FiveToOneReverseActivity">
+
+    <Button
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/done_button_rounded_bg"
+            android:text="Done"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/five_to_one_reverse_done_btn"
+            app:layout_constraintEnd_toStartOf="@+id/guideline700" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="196dp"/>
+    <Button
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/ready_button_rounded_bg"
+            android:text="Ready"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/five_to_one_reverse_ready_btn"
+            app:layout_constraintTop_toTopOf="@+id/five_to_one_reverse_done_btn" app:layout_constraintBottom_toBottomOf="@+id/five_to_one_reverse_done_btn"
+            app:layout_constraintVertical_bias="1.0" app:layout_constraintStart_toStartOf="@+id/guideline700"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"/>
+    <TextView
+            android:fontFamily="@font/helvetica_neue_light"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/five_to_one_result_txtview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/five_to_one_reverse_done_btn" android:layout_marginTop="32dp"/>
+    <TextView
+            android:textSize="35sp"
+            android:fontFamily="@font/helvetica_neue_light"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/five_to_one_reverse_score_txtview"
+            app:layout_constraintTop_toBottomOf="@+id/five_to_one_result_txtview"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline700"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.5"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
