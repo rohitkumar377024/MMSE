@@ -18,31 +18,12 @@ class NewToolboxActivity : AppCompatActivity() {
         setContentView(R.layout.activity_new_toolbox)
 
         //Initializing Tools
-        //Label(this).init()
-        //PlayAudioFile(this, this).init()
+        Label(this).init()
+        PlayAudioFile(this, this).init()
 
-        val containerLL: LinearLayout = findViewById(R.id.container_ll)
-
-        containerLL.setOnClickListener {
-
-//            val newLinearLayout = LinearLayout(this)
-//            val textView = TextView(this)
-//            textView.text = "Test 1 2 3 4 5 6 7 8 9 10"
-//            newLinearLayout.addView(textView)
-//            containerLL.addView(newLinearLayout)
-
-//            val newLinearLayout = LinearLayout(this)
-//            val child = layoutInflater.inflate(R.layout.tool_label_layout, null)
-//            newLinearLayout.addView(child)
-//            containerLL.addView(newLinearLayout)
-
-            //val textView = TextView(this)
-            //textView.text = "Test 1 2 3 4 5 6 7 8 9 10"
-            //val child = layoutInflater.inflate(R.layout.tool_label_layout, null)
-
-            //containerLL.addView(child)
-
-            Label(this).init() //Let's see if this inflates the layout itself
+        //todo --> remove later once drag and drop demo done
+        button2473x2.setOnClickListener {
+            startActivity(Intent(this, DragAndDropDemoActivity::class.java))
         }
     }
 

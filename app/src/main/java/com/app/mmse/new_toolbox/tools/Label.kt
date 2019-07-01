@@ -24,21 +24,16 @@ class Label(activity: Activity) {
     private var isChangeVisible: Boolean = false
 
     fun init() {
-        //mActivity.setContentView(R.layout.tool_label_layout)
         findViewByIds()
-        //showLabelTool()
+        showLabelTool()
         handleRealtimeLabelPreview()
         handleButtonStates()
     }
 
-    fun addLayout() {
-
-    }
-
     private fun findViewByIds() { /* Connecting All UI Views with their respective IDs */
-//        labelLayout = mActivity.findViewById(R.id.label_layout)
-//        playAudioFileLayout = mActivity.findViewById(R.id.play_audio_file_layout)
-//        toolboxLabel = mActivity.findViewById(R.id.tool_box_label)
+        labelLayout = mActivity.findViewById(R.id.label_layout)
+        playAudioFileLayout = mActivity.findViewById(R.id.play_audio_file_layout)
+        toolboxLabel = mActivity.findViewById(R.id.tool_box_label)
         labelInputEditText = mActivity.findViewById(R.id.label_user_input_edittext)
         labelShowTextView = mActivity.findViewById(R.id.label_show_text_txtview)
         labelDoneButton = mActivity.findViewById(R.id.label_done_btn)
