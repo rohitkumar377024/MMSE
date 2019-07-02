@@ -48,6 +48,8 @@ class DragAndDropDemoActivity : AppCompatActivity(), View.OnTouchListener, View.
             false
     }
 
+
+
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
