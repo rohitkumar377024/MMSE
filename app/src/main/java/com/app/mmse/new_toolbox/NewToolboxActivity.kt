@@ -2,10 +2,9 @@ package com.app.mmse.new_toolbox
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.app.mmse.R
+import com.app.mmse.new_toolbox.drag_and_drop.DragAndDropDemoActivity
 import com.app.mmse.new_toolbox.tools.Label
 import com.app.mmse.new_toolbox.tools.PlayAudioFile
 import kotlinx.android.synthetic.main.activity_new_toolbox.*

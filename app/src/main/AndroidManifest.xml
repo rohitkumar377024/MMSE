@@ -17,7 +17,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".new_toolbox.DragAndDropDemoActivity"></activity>
+        <activity android:name=".new_toolbox.drag_and_drop.DragAndDropDemoActivity"></activity>
         <activity android:name=".new_toolbox.NewToolboxActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
