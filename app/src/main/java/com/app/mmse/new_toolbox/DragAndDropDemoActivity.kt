@@ -1,5 +1,6 @@
 package com.app.mmse.new_toolbox
 
+import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
 import android.view.DragEvent
@@ -18,6 +19,15 @@ class DragAndDropDemoActivity : AppCompatActivity(), View.OnTouchListener, View.
     private lateinit var text4: TextView
     private lateinit var text5: TextView
     private lateinit var text6: TextView
+    private lateinit var text7: TextView
+    private lateinit var text8: TextView
+    private lateinit var text9: TextView
+    private lateinit var text10: TextView
+    private lateinit var text11: TextView
+    private lateinit var text12: TextView
+    private lateinit var text13: TextView
+    private lateinit var text14: TextView
+    private lateinit var text15: TextView
 
     //When touched text gets dropped into either text4 or text5 or text6 then this method will be called
     override fun onDrag(v: View, event: DragEvent): Boolean {
@@ -54,23 +64,44 @@ class DragAndDropDemoActivity : AppCompatActivity(), View.OnTouchListener, View.
             return false
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drag_and_drop_demo)
 
+        /* Connecting all Views with their respective IDs */
         text1 = findViewById(R.id.text1)
         text2 = findViewById(R.id.text2)
         text3 = findViewById(R.id.text3)
         text4 = findViewById(R.id.text4)
         text5 = findViewById(R.id.text5)
         text6 = findViewById(R.id.text6)
+        text7 = findViewById(R.id.text7)
+        text8 = findViewById(R.id.text8)
+        text9 = findViewById(R.id.text9)
+        text10 = findViewById(R.id.text10)
+        text11 = findViewById(R.id.text11)
+        text12 = findViewById(R.id.text12)
+        text13 = findViewById(R.id.text13)
+        text14 = findViewById(R.id.text14)
+        text15 = findViewById(R.id.text15)
 
-        //Setting touch and drag listeners
+        /* Setting Touch and Drag Listeners */
         text1.setOnTouchListener(this)
-        text2.setOnTouchListener(this)
-        text3.setOnTouchListener(this)
+
+        text2.setOnDragListener(this)
+        text3.setOnDragListener(this)
         text4.setOnDragListener(this)
         text5.setOnDragListener(this)
         text6.setOnDragListener(this)
+        text7.setOnDragListener(this)
+        text8.setOnDragListener(this)
+        text9.setOnDragListener(this)
+        text10.setOnDragListener(this)
+        text11.setOnDragListener(this)
+        text12.setOnDragListener(this)
+        text13.setOnDragListener(this)
+        text14.setOnDragListener(this)
+        text15.setOnDragListener(this)
     }
 }
