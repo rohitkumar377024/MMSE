@@ -32,7 +32,7 @@ class DragAndDropDemoActivity : AppCompatActivity(), View.OnTouchListener, View.
 
             //update the text and color in the target view to reflect the data being dropped
             dropTarget.text = "${dropped.text}: Dropped here!" //todo --> changed here
-            dropTarget.setBackgroundColor(Color.BLUE)
+            dropTarget.setBackgroundColor(Color.CYAN)
         }
         return true
     }
@@ -48,8 +48,6 @@ class DragAndDropDemoActivity : AppCompatActivity(), View.OnTouchListener, View.
             false
     }
 
-
-
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,8 +55,8 @@ class DragAndDropDemoActivity : AppCompatActivity(), View.OnTouchListener, View.
 
         /* Setting Touch and Drag Listeners */
         text1.setOnTouchListener(this)
+        text2.setOnTouchListener(this)
 
-        text2.setOnDragListener(this)
         text3.setOnDragListener(this)
         text4.setOnDragListener(this)
         text5.setOnDragListener(this)

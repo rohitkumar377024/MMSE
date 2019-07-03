@@ -8,18 +8,17 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_margin="5dp"
-            android:text="Label - Drag Me"
+            android:text="Label 1 - Drag Me"
             android:id="@+id/text1"
             style="@style/ToolButtonStyle" />
     <TextView
+            android:gravity="center"
+            android:fontFamily="@font/helvetica_neue_thin"
             android:layout_width="match_parent"
-            android:layout_margin="0dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
+            android:layout_margin="5dp"
             style="@style/ToolButtonStyle"
-            android:text=""
-            android:id="@+id/text2"
-            android:background="@android:color/holo_orange_light"/>
+            android:text="Label 2 - Drag Me"
+            android:id="@+id/text2"/>
     <TextView
             android:layout_width="match_parent"
             android:layout_margin="0dp"
@@ -82,7 +81,7 @@
             style="@style/ToolButtonStyle"
             android:text=""
             android:id="@+id/text9"
-            android:background="@android:color/holo_orange_dark"/>
+            android:background="@android:color/holo_orange_light"/>
     <TextView
             android:layout_width="match_parent"
             android:layout_margin="0dp"
