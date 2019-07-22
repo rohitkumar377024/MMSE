@@ -13,22 +13,17 @@ import kotlinx.android.synthetic.main.activity_drag_and_drop_demo.*
 
 class DragAndDropDemoActivity : AppCompatActivity(), View.OnTouchListener, View.OnDragListener {
 
+    //Change the drag size to the dropped size
+    //scale it up
+
     //When touched text gets dropped into either text4 or text5 or text6 then this method will be called
     override fun onDrag(v: View, event: DragEvent): Boolean {
         if (event.action == DragEvent.ACTION_DROP) {
             //handle the dragged view being dropped over a target view
             val dropped = event.localState as TextView
             val dropTarget = v as TextView
-            //stop displaying the view where it was before it was dragged
+            //stop displaying the view where it was before i t was dragged
             dropped.visibility = View.INVISIBLE
-
-            //if an item has already been dropped here, there will be different string
-            when (dropTarget.text.toString()) {
-                //if there is already an item here, set it back visible in its original place
-                text1.text.toString() -> text1.visibility = View.VISIBLE
-                text2.text.toString() -> text2.visibility = View.VISIBLE
-                text3.text.toString() -> text3.visibility = View.VISIBLE
-            }
 
             //update the text and color in the target view to reflect the data being dropped
             dropTarget.text = "${dropped.text}: Dropped here!" //todo --> changed here
